@@ -1,0 +1,13 @@
+[Unit]
+Description=ices Service
+After=network.target 
+Wants=icecast.service
+
+[Service]
+Type=simple
+User=rocknroll
+ExecStart=/usr/local/bin/ices -c /home/rocknroll/etc/ices/ices.conf
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

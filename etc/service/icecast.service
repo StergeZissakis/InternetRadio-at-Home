@@ -1,0 +1,13 @@
+[Unit]
+Description=icecast Service
+After=network.target
+Before=ices.serivce
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/icecast -c /home/rocknroll/etc/icecast/icecast.xml
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+.bash_history
+.bash_logout
+.bash_profile
+.ezstream
+.gitconfig
+.lesshst
+.netrc
+.node_repl_history
+.ssh/*
+.viminfo

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<icecast>
+    <limits>
+        <clients>100</clients>
+        <sources>2</sources>
+        <threadpool>5</threadpool>
+        <queue-size>524288</queue-size>
+        <client-timeout>30</client-timeout>
+        <header-timeout>15</header-timeout>
+        <source-timeout>10</source-timeout>
+        <burst-on-connect>1</burst-on-connect>
+        <burst-size>65535</burst-size>
+    </limits>
+
+    <authentication>
+        <source-password>SetMe</source-password>
+        <relay-password>SetMe</relay-password>
+
+        <admin-user>SetMe</admin-user>
+        <admin-password>SetMe@50's</admin-password>
+    </authentication>
+
+    <shoutcast-mount>SetMe</shoutcast-mount>
+
+    <directory>
+        <yp-url-timeout>15</yp-url-timeout>
+        <yp-url>http://dir.xiph.org/cgi-bin/yp-cgi</yp-url>
+    </directory>
+
+		<location>SetMe</location>
+    <hostname>setMe</hostname>
+		<admin>setMe</admin>
+
+    <listen-socket>
+				<bind-address>SetMe</bind-address>
+        <port>SetMe</port>
+        <shoutcast-mount>SetMe</shoutcast-mount>
+    </listen-socket>
+
+    <fileserve>1</fileserve>
+
+    <paths>
+        <basedir>SetMe</basedir>
+				<logdir>SetMe</logdir>
+				<webroot>SetMe</webroot>
+				<adminroot>SetMe</adminroot>
+				<pidfile>SetMe</pidfile>
+        <alias source="/" dest="/status.xsl"/>
+    </paths>
+
+    <logging>
+        <accesslog>SetMe</accesslog>
+        <errorlog>SetMe</errorlog>
+        <loglevel>3</loglevel> <!-- 4 Debug, 3 Info, 2 Warn, 1 Error -->
+        <logsize>10000</logsize> <!-- Max size of a logfile -->
+        <logarchive>1</logarchive>
+    </logging>
+
+    <security>
+        <chroot>0</chroot>
+        <changeowner>
+            <user>SetMe</user>
+            <group>SetMe</group>
+        </changeowner>
+    </security>
+</icecast>

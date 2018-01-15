@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ices>
+	<background>0</background>
+	<logpath>/home/ec2-user/icecast/logs/ices</logpath>
+	<logfile>ices.log</logfile>
+	<logsize>2048</logsize>
+	<loglevel>3</loglevel>
+	<consolelog>0</consolelog>
+	<pidfile>/home/ec2-user/icecast/logs/ices/ices.pid</pidfile>
+
+	<stream>
+		<metadata>
+			<name>Rock N Roll Legends E-Radio</name>
+			<genre>Rock N Roll</genre>
+			<description>A blast from the past</description>
+			<url>http://www.rock-n-rolllegends.com/</url>
+		</metadata>
+		<input>
+			<param name="type">basic</param>
+			<param name="file">/home/ec2-user/icecast/etc/rock-n-roll-legends.playlist</param>
+			<param name="random">0</param>
+			<param name="once">0</param>
+			<param name="restart-after-reread">1</param>
+		</input>
+		<instance>
+				<hostname>ip-172-31-11-187.eu-west-1.compute.internal</hostname>
+				<port>5656</port>
+				<password>MayTheSourceBWithYous42Src</password>
+				<mount>/rock-n-rolllegends.nsv</mount>
+				<resample>
+					<in-rate>44100</in-rate>
+					<out-rate>22050</out-rate>
+				</resample>
+				<downmix>1</downmix>
+				<savefile>/home/ec2-user/icecast/ices2.save</savefile>
+		</instance>
+	</stream>
+</ices>
